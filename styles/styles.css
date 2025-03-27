@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Home Section */
+.home {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 4rem 1.5rem;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.home p {
+    font-size: 1.1rem;
+    margin: 0 auto 1.5rem;
+    max-width: 800px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff9900;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 4rem 1.5rem;
+    background-color: #f8f9fa;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.feature h3 {
+    color: #007BFF;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    order: -1;
+}
+
+.feature img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1.2rem;
+    order: -2;
+}
+
+.feature p {
+    color: #444;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+
+    .feature {
+        margin-bottom: 1.5rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature img {
+        height: 150px;
+    }
+}
